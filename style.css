@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0,0,0,.3);
+    position: sticky;
+    top: 0px;
+    /* اگر مقدار تاپ را صفر نگذاریم پوزیشن استیکی کار نمیکند. */
+    background: white;
+}
+nav{
+    min-height: 10vh;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    /* چون عرض نود دادیم و مارجین آتو گذاشتیم پس نیاز نیست بنویسم 
+    justify-content: space-around; */
+    align-items: center;
+    
+}
+
+nav h1,nav ul{
+    font-size: 1.5rem;
+    flex:1;
+}
+
+.nav-links{
+    display: flex;
+   width:30%;
+   justify-content: space-between;
+
+}
+.nav-links li{
+    list-style: none;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color:black;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+    font-size: 5rem;
+    color:white;
+}
+.home{
+    background: linear-gradient(to right top ,#3a7bd5,#3a6073    );
+}
+
+.project{
+    background: linear-gradient(to right top ,#9796f0,#fbc7d4
+    );
+}
+
+.contact{
+    background: linear-gradient(to right top ,#79CBCA,#e684ae    );
+}
+.bubble{
+    position:absolute;
+    z-index:-2;
+    background: linear-gradient(to right top ,#79CBCA,#e684ae    );
+    transform:scale(1.5);
+    transition:all .5s ease ;
+}
